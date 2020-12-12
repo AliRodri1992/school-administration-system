@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
 
-
 gem 'audited'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -34,27 +33,27 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   gem 'annotate'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'ffaker'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
-  gem 'cucumber-rails', require: false
   # gem 'autotest-rails'
 end
 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'listen'
-  gem 'railroady'
-  gem 'rack-mini-profiler', require: false
   gem 'flamegraph'
-  gem 'stackprof'
+  gem 'listen'
   gem 'memory_profiler'
+  gem 'rack-mini-profiler', require: false
+  gem 'railroady'
   gem 'rubocop'
   gem 'spring'
   gem 'spring-watcher-listen'
+  gem 'stackprof'
   gem 'web-console'
 end
 
@@ -69,4 +68,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
