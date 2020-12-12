@@ -3,6 +3,9 @@ Style/Documentation:
 
 Metrics/BlockLength:
   Enabled: false
+  Exclude:
+    - config/**/*
+    - spec/**/*
 
 Style/RedundantParentheses:
   Enabled: false
@@ -14,6 +17,15 @@ Style/FrozenStringLiteralComment:
 # About ABC http://wiki.c2.com/?AbcMetric
 Metrics/AbcSize:
   Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+
 
 AllCops:
   Exclude:
