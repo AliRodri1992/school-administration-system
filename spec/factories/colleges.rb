@@ -1,9 +1,8 @@
 FactoryBot.define do
   factory :college do
     key { "MyString" }
-    name { "MyString" }
+    name { "Escuela Primaria Revolucion" }
     turn { "MyString" }
-    public { false }
-    deleted_at { "2020-12-12 15:16:19" }
+    public { true }
   end
 end
