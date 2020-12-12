@@ -1,7 +1,7 @@
 version: '3'
 services:
   db:
-    image: postgres:9.5
+    image: postgres:11.9
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     restart: always
