@@ -57,8 +57,11 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'coveralls'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  gem 'simplecov'
+  gem 'timecop'
   gem 'webdrivers'
 end
 

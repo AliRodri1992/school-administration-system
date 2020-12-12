@@ -40,3 +40,5 @@ tmp/
 log/
 
 .idea/
+
+coverage/
