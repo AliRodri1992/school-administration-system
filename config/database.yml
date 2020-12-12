@@ -12,8 +12,8 @@ development:
 
 test:
   <<: *default
-  user: <%= ENV.fetch("PGUSER", 'postgres') %>
-  # password: <%= ENV.fetch("PGPASSWORD", 'postgres') %>
+  user: <%= ENV.fetch("PGUSER") %>
+  user: <%= ENV.fetch("PGPASSWORD") %>
   database: school_administration_test
 
 production:
