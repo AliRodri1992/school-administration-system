@@ -36,6 +36,8 @@ group :development, :test do
   gem 'ffaker'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'cucumber-rails', require: false
+  # gem 'autotest-rails'
 end
 
 group :development do
@@ -43,8 +45,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'listen'
   gem 'railroady'
-  # Display performance information such as SQL time and flame graphs for each request in your browser.
-  # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', require: false
   gem 'flamegraph'
   gem 'stackprof'
