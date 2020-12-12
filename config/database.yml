@@ -20,3 +20,7 @@ test:
 production:
   <<: *default
   database: school_administration_production
+
+staging:
+  <<: *default
+  database: school_administration_staging
