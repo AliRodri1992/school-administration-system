@@ -28,15 +28,11 @@ Style/RedundantParentheses:
 
 # I can correct It by -a
 Style/FrozenStringLiteralComment:
-  Safe: true
   Enabled: false
 
 # About ABC http://wiki.c2.com/?AbcMetric
 Metrics/AbcSize:
   Enabled: false
-
-Metrics/LineLength:
-  Max: 100
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
@@ -109,4 +105,49 @@ Style/RedundantRegexpEscape:
   Enabled: true
 
 Style/SlicingWithRange:
+  Enabled: true
+
+Style/RedundantArgument:
+  Enabled: true
+
+Style/SwapValues:
+  Enabled: true
+
+Style/ArgumentsForwarding:
+  Enabled: true
+
+Style/CollectionCompact:
+  Enabled: true
+
+Style/DocumentDynamicEvalDefinition:
+  Enabled: true
+
+Style/NegatedIfElseCondition:
+  Enabled: true
+
+Style/NilLambda:
+  Enabled: true
+
+Lint/EmptyBlock:
+  Enabled: true
+
+Lint/EmptyClass:
+  Enabled: true
+
+Lint/NoReturnInBeginEndBlocks:
+  Enabled: true
+
+Lint/ToEnumArguments:
+  Enabled: true
+
+Lint/UnexpectedBlockArity:
+  Enabled: true
+
+Lint/UnmodifiedReduceAccumulator:
+  Enabled: true
+
+Lint/DuplicateBranch:
+  Enabled: true
+
+Lint/DuplicateRegexpCharacterClassElement:
   Enabled: true
