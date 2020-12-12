@@ -1,3 +1,19 @@
+AllCops:
+  TargetRubyVersion: 2.7.2
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'features/**/*'
+    - 'spec/**/*'
+    - 'bin/*'
+    - 'node_modules/**/*'
+    - 'vendor/bundle/**/*' # For CI broken
+    - 'tmp/**/*'
+    - '.git/**/*'
+
+# pending status for avoiding the warning
+
 Style/Documentation:
   Enabled: false
 
@@ -13,6 +29,7 @@ Style/RedundantParentheses:
 # I can correct It by -a
 Style/FrozenStringLiteralComment:
   Safe: true
+  Enabled: false
 
 # About ABC http://wiki.c2.com/?AbcMetric
 Metrics/AbcSize:
@@ -24,19 +41,6 @@ Metrics/LineLength:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
-
-
-
-AllCops:
-  Exclude:
-    - 'db/**/*'
-    - 'config/**/*'
-    - 'script/**/*'
-    - 'bin/*'
-    - 'node_modules/**/*'
-    - 'vendor/bundle/**/*' # For CI broken
-
-# pending status for avoiding the warning
 
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true

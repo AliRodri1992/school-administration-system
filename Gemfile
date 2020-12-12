@@ -38,8 +38,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'ffaker'
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
   gem 'rspec_junit_formatter'
+  gem 'rspec-rails'
   # gem 'autotest-rails'
 end
 
