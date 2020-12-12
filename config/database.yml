@@ -1,12 +1,9 @@
 default: &default
   adapter: postgresql
   encoding: utf8
-  host: localhost
-  port: 5432
-  user: freightspot_user
-  password: fr31ght5p0t_u53r
-  # For details on connection pooling, see Rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  host: <%= ENV.fetch("POSTGRES_HOST", 'localhost') %>
+  user: postgres
+  password: postgres
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
@@ -15,6 +12,8 @@ development:
 
 test:
   <<: *default
+  user: <%= ENV.fetch("PGUSER") %>
+  password: <%= ENV.fetch("PGPASSWORD") %>
   database: school_administration_test
 
 production:
