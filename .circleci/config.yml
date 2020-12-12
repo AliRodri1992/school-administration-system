@@ -19,7 +19,7 @@ jobs:
     parallelism: 3
     docker:
       - image: cimg/ruby:2.7-node
-      - image: circleci/postgres:9.5-alpine
+      - image: circleci/postgres:11.9
         environment:
           POSTGRES_USER: circleci-demo-ruby
           POSTGRES_DB: rails_blog_test
@@ -43,13 +43,6 @@ jobs:
       - run:
           name: Database setup
           command: bundle exec rails db:schema:load --trace
-      - run:
-          name: RSpec
-          command: |
-            bundle exec rspec --profile 10 \
-                              --format progress
-      - store_artifacts:
-          path: coverage
       # Run rspec in parallel
       - ruby/rspec-test
       - ruby/rubocop-check
