@@ -43,6 +43,13 @@ jobs:
       - run:
           name: Database setup
           command: bundle exec rails db:schema:load --trace
+      - run:
+          name: RSpec
+          command: |
+            bundle exec rspec --profile 10 \
+                              --format progress
+      - store_artifacts:
+          path: coverage
       # Run rspec in parallel
       - ruby/rspec-test
       - ruby/rubocop-check
