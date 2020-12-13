@@ -20,3 +20,5 @@ global.$ = jQuery;
 window.Rails = Rails
 
 import 'bootstrap'
+import appInit from './metronic/app.init';
+document.addEventListener('DOMContentLoaded', appInit);
