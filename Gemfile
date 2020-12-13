@@ -4,7 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.2'
 
 gem 'audited'
+gem 'aws-sdk-s3'
+gem 'enum_help'
+gem 'friendly_id'
 gem 'jbuilder', '~> 2.7'
+gem 'name_of_person'
 gem 'paranoia'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
