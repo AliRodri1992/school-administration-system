@@ -7,9 +7,16 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap'
+import "@fortawesome/fontawesome-free/css/all"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-require("stylesheets/application.scss")
+require('datatables.net-bs4')
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import $ from 'jquery';
+global.$ = jQuery;
+window.Rails = Rails
+
+import 'bootstrap'
