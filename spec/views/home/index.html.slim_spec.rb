@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe "home/index.html.slim", type: :view do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "displays the given text" do
+
+    render :plain => "This is directly rendered"
+
+    expect(rendered).to match /directly rendered/
+  end
 end
