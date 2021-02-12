@@ -1,0 +1,19 @@
+{
+  "dashboard": {
+    "WELCOME": "Welcome sadasdasd !"
+  },
+  "topbar": {
+    "search": {
+      "PLACEHOLDER": "Type and hit enter.."
+    }
+  },
+  "sidebar": {
+    "WELCOME": "Welcome asdasdasd",
+    "heading": {
+      "HEADER": "Main Navigation"
+    },
+    "nav": {
+      "SINGLEVIEW": "Single View"
+    }
+  }
+}
