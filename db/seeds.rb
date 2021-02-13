@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+unistmo = University.create(name: 'Universidad del Istmo')
+umar = University.create(name: 'Universidad del Mar')
+Campus.create(name: 'Campus Ixtepec', university_id: unistmo.id)
+Campus.create(name: 'Campus Juchitan', university_id: unistmo.id)
+Campus.create(name: 'Campus Tehuantepec', university_id: unistmo.id)
+Campus.create(name: 'Campus Huatulco', university_id: umar.id)
+Campus.create(name: 'Campus Puerto Angel', university_id: umar.id)
+Campus.create(name: 'Campus Puerto Escondido', university_id: umar.id)

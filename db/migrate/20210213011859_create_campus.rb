@@ -3,6 +3,7 @@ class CreateCampus < ActiveRecord::Migration[6.1]
     create_table :campus do |t|
       t.string :code
       t.string :name
+      t.references :university, foreign_key: true
 
       t.timestamps
       t.timestamp :deleted_at
