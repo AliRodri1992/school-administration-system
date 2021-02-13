@@ -20,7 +20,7 @@ RSpec.describe Campus, type: :model do
     end
 
     it 'has a unique name' do
-      campus2 = create(:campus, name: 'Example')
+      create(:campus, name: 'Example')
       campus3 = build(:campus, name: 'Example')
       expect(campus3).to_not be_valid
     end
