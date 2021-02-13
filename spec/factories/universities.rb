@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :university do
-    name { "MyString" }
+    name { FFaker::Education.school }
     motto { "MyString" }
   end
 end
