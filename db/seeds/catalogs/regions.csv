@@ -1,0 +1,31 @@
+id,key,district,region
+1,4,Teotitlán,Cañada
+2,5,Cuicatlán,Cañada
+3,21,Jamiltepec,Costa
+4,22,Juquila,Costa
+5,30,Pochutla,Costa
+6,28,Tehuantepec,Istmo de Tehuantepec
+7,29,Juchitán,Istmo de Tehuantepec
+8,1,Silacayoapam,Mixteca
+9,2,Huajuapan,Mixteca
+10,3,Coixtlahuaca,Mixteca
+11,8,Juxtlahuaca,Mixteca
+12,9,Teposcolula,Mixteca
+13,10,Nochixtlán,Mixteca
+14,16,Tlaxiaco,Mixteca
+15,6,Tuxtepec,Papaloapan
+16,7,Choapan,Papaloapan
+17,12,Ixtlán,Sierra Norte
+18,13,Villa Alta,Sierra Norte
+19,14,Mixe,Sierra Norte
+20,15,Putla,Sierra Sur
+21,23,Sola de Vega,Sierra Sur
+22,26,Miahuatlán,Sierra Sur
+23,27,Yautepec,Sierra Sur
+24,11,Etla,Valles Centrales
+25,17,Zaachila,Valles Centrales
+26,18,Zimatlán,Valles Centrales
+27,19,Centro,Valles Centrales
+28,20,Tlacolula,Valles Centrales
+29,24,Ejutla,Valles Centrales
+30,25,Ocotlán,Valles Centrales
