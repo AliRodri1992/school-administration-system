@@ -51,6 +51,7 @@ group :development do
   gem 'rack-mini-profiler', require: false
   gem 'railroady'
   gem 'rubocop'
+  gem 'rubocop-rspec', require: false
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'stackprof'
