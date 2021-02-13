@@ -5,6 +5,7 @@ class CreateUniversities < ActiveRecord::Migration[6.1]
       t.string :motto
 
       t.timestamps
+      t.timestamp :deleted_at, index: true
     end
   end
 end
