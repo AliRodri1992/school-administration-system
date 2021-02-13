@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
 
-gem 'audited'
+gem 'audited', '~> 4.9'
 gem 'aws-sdk-s3'
 gem 'enum_help'
 gem 'friendly_id'
@@ -51,6 +51,7 @@ group :development do
   gem 'rack-mini-profiler', require: false
   gem 'railroady'
   gem 'rubocop'
+  gem 'rubocop-rspec', require: false
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'stackprof'
