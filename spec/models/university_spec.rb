@@ -14,8 +14,8 @@ RSpec.describe University, type: :model do
     expect(university2).to_not be_valid
   end
 
-  it "has a unique name" do
-    university2 = create(:university, name: "Example")
+  it 'has a unique name' do
+    create(:university, name: 'Example')
     university3 = build(:university, name: 'Example')
     expect(university3).to_not be_valid
   end
