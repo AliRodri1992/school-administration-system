@@ -1,0 +1,1 @@
+Country.create(name: 'Mexico', code: 'MX')
