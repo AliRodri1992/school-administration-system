@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
 
-gem 'audited'
+gem "audited", "~> 4.9"
 gem 'aws-sdk-s3'
 gem 'enum_help'
 gem 'friendly_id'
