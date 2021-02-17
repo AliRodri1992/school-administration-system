@@ -39,7 +39,6 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec_junit_formatter'
   gem 'rspec-rails'
-  gem 'simplecov-lcov'
 end
 
 group :development do
@@ -64,6 +63,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
   gem 'simplecov'
+  gem 'simplecov-lcov'
   gem 'timecop'
   gem 'webdrivers'
 end
