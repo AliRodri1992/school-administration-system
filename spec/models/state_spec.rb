@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe State, type: :model do
+  # I don't know the error.
   before(:all) do
     @state1 = create(:state)
   end
