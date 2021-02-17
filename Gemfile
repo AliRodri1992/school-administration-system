@@ -40,7 +40,6 @@ group :development, :test do
   gem 'rspec_junit_formatter'
   gem 'rspec-rails'
   gem 'simplecov-lcov'
-  # gem 'autotest-rails'
 end
 
 group :development do
