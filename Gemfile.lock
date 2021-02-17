@@ -331,6 +331,7 @@ GEM
       simplecov-html (~> 0.11)
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
+    simplecov-lcov (0.8.0)
     simplecov_json_formatter (0.1.2)
     slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
@@ -433,6 +434,7 @@ DEPENDENCIES
   shoulda-matchers
   simple_form
   simplecov
+  simplecov-lcov
   slim-rails
   spring
   spring-watcher-listen
